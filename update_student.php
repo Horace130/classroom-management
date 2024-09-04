@@ -11,6 +11,7 @@ $database_password = "pass123";
     $database_password // password
   );
 
+  
   $name = $_POST["student_name"];
   $id = $_POST["student_id"];
 
@@ -28,9 +29,8 @@ $database_password = "pass123";
           'name' => $name,
           'id' => $id
       ]);
+
       // redirect
       header("Location: index.php");
       exit;
   }
-
-?>
